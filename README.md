@@ -1,1 +1,3 @@
-# ectnrnwbl-plastic
+# Detecting Recyclable Waste 
+Imlemented using Tensorflow and OpenCV
+
