@@ -1,4 +1,4 @@
-# Detecting Accidental Recyclable Waste:Plastic,Metals,Cardboard,Paper in Food Waste
+# Detecting accidental Recyclable waste in Food waste
 - Researched Convolutional Nueral Networks to achieve a 89% Accuracy Rate
 - Imlemented using Tensorflow and OpenCV
 - Compatible with Raspberry Pi
