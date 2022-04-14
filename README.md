@@ -8,4 +8,4 @@
 - Robotic Arm Control:
     - Josue's Demos: https://drive.google.com/drive/folders/12-YP4pVO31WQ4dngJWS69lJ64XVlp6d5
 - Linear Actuator Control:
-    - https://www.youtube.com/channel/UC2wH3388M2OPoOXGyb5bCyQ
+    - https://youtu.be/huWPpR59hyE
