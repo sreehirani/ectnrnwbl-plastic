@@ -1,28 +1,39 @@
-#define pinSTP 3
-#define pinDIR 2
-#define pinENA 5
+#define pinPUL 8
+#define pinDIR 9
+#define pinENA 10
+
 void setup() 
 {
-  pinMode(pinSTP,OUTPUT);
+  pinMode(pinPUL,OUTPUT);
   pinMode(pinDIR, OUTPUT);
   pinMode(pinENA, OUTPUT);
-
-  pinMode(LED_BUILTIN, OUTPUT);
-  
-  digitalWrite(pinSTP,HIGH);
-  digitalWrite(pinDIR,LOW);
-  digitalWrite(pinENA,255);
-  delay(2000);
 }
 
-void loop() 
-{
-  digitalWrite(LED_BUILTIN, HIGH);   
-  delay(1000);                       
-  digitalWrite(LED_BUILTIN, LOW);                           
+void loop() {
   
-  
-  digitalWrite(pinSTP,LOW);
-  digitalWrite(pinDIR,LOW);
-  delay(1000); 
+  forward(100);
+  reverse(100);
+  delay(60000)
+}
+
+void forward(int steps) {
+  int i;                  
+  digitalWrite(pinENA,LOW); // LOW - Enable motor
+  digitalWrite(pinDIR,LOW); // To set direction
+  for (i=0;i<steps;i++) {
+    digitalWrite(pinPUL,!digitalRead(pinPUL));
+    delay(10);
+  }
+  digitalWrite(pinENA,HIGH); // HIGH - Disable motor
+}
+
+void reverse(int steps) {
+  int i;                  
+  digitalWrite(pinENA,LOW); // LOW - Enable motor
+  digitalWrite(pinDIR,HIGH); // To set direction
+  for (i=0;i<steps;i++) {
+    digitalWrite(pinPUL,!digitalRead(pinPUL));
+    delay(10);
+  }
+  digitalWrite(pinENA,HIGH); // HIGH - Disable motor
 }
