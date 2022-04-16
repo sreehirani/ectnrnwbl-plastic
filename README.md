@@ -26,7 +26,7 @@ Ecotone's garbage sorting code is a modification of the toy garbage sorting code
 
 The toy garbage code only works on the wooden blocks that came with the kit. It uses a variation of the YOLOv4-Tiny model targeted at a limited dataset (images printed on the wooden blocks).
 
-Ecotone's code also uses a pre-trained model of YOLOv4-Tiny, which is accessible [here](https://github.com/bubbliiiing/yolov4-tiny-tf2). The instructions there were not in English, so I used this [reference](https://github.com/qqwweee/keras-yolo3/) for guidance. 
+Ecotone's code also uses a pre-trained model of YOLOv4-Tiny, which is accessible [here](https://github.com/bubbliiiing/yolov4-tiny-tf2). The instructions there were not in English, so I used this [reference](https://github.com/qqwweee/keras-yolo3/) for guidance. This [post](https://www.v7labs.com/blog/yolo-object-detection) could also be helpful for understanding how YOLO works. 
 
 The folder containing the code can be found on the Raspberry Pi at `~/ecotone_garbage_system`. All the required folder and scripts are in that folder, namely:
 
